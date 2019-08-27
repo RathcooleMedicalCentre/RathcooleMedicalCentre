@@ -126,7 +126,12 @@
 		            var gc =document.getElementsByTagName('#gameContainer')[0];
 		  	   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
   if (iOS) {
-	  gc.height= 90vh;
+	  <style>
+	       #gameContainer {
+        width: 100vw;
+        height: 100vh;
+	  </style>
+      }
   }
 
     
