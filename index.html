@@ -16,7 +16,7 @@
         background: #ffffff;
 		 overflow: hidden;
         position: fixed;
-	       onresize="resize_canvas()" onpageshow="resize_canvas()"
+	      <body onresize="ori()" onpageshow="ori()">
       }
       #gameContainer {
         width: 100vw;
@@ -122,25 +122,11 @@
       }, 2000);
     }
   }
-	       function resize_cavas(){
-            var canvas=document.getElementsByTagName('canvas')[0];
-          var container = document.getElementById('webgl-content');
-          var width = container.clientWidth;
-          var height = container.clientHeight;
- 
-          if(width <= 500){
-               //Make height match width for mobile browsers...
-               canvas.width = width;
-               canvas.height = width;
-          else{
-               //Make height a little smaller than width
-               canvas.width = width;
-               canvas.height = width *0.84;
-          }
- 
-          //Print height and width to console, pressing f12 shows console...
-          console.log("Canvas w: "+canvas.width+", h: "+canvas.height);
-     }
+	  function ori() {
+  if (window.outerWidth > window.outerHeight) {
+    
+}
+	   
   </script>
 
 </html>
