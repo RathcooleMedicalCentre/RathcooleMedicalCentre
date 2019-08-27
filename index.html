@@ -16,7 +16,7 @@
         background: #ffffff;
 		 overflow: hidden;
         position: fixed;
-	      <body onresize="ori()" onpageshow="ori()">
+	  onpageshow="ori()";
       }
       #gameContainer {
         width: 100vw;
@@ -123,7 +123,12 @@
     }
   }
 	  function ori() {
-  if (window.outerWidth > window.outerHeight) {
+		            var gc =document.getElementsByTagName('#gameContainer')[0];
+		  	   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
+  if (iOS) {
+	  gc.height = 90vh;
+  }
+
     
 }
 	   
