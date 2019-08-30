@@ -17,8 +17,7 @@
 overflow: hidden;
 	      
         background: #ffffff;
-	      display: grid;
-  grid-template-rows: 100px 300px;
+
 
 	      
 		   	
@@ -28,6 +27,16 @@ overflow: hidden;
 
 
       }
+	    
+	      .geeks {  
+                background-color:green;  
+                padding:0px;  
+                display: grid;  
+                grid-template-rows: auto; 
+                grid-gap: 0px;  
+            }  
+	    
+	    
            #gameContainer {
 		  	  
 				     	          position: absolute;
@@ -119,7 +128,10 @@ overflow: hidden;
   </head>
 
   <body>
-    <div id="gameContainer"></div>
+	        <div class="geeks">  
+   <div id="gameContainer"></div> 
+        </div>  
+ 
     <div id="loader">
       <img class="logo" src="logo.png">
       <div class="spinner"></div>
