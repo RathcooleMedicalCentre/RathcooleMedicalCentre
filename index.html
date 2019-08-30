@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-
   <head>
     <meta charset="utf-8">
-	      <meta name='apple-mobile-web-app-capable' content='yes' />
-
-
-  
-
+    <title>Rathcoole Medical</title>
     <style>
       html {
         box-sizing: border-box;
@@ -17,51 +12,20 @@
         box-sizing: inherit;
       }
       body {
-	      margin:0px;
-	      border:0px
-	
-          position:fixed;
-overflow: hidden;
-	      
+        margin: 0;
         background: #ffffff;
-
-
-	      
-
-
-	
-
-
-
+		 overflow: hidden;
+        position: fixed;
       }
-	    
-	     
-
-	    
-	    
            #gameContainer {
-		  	  
-				     	          position: absolute;
-		   
-
-	height:100%;
-	      width:90%;
-		   left:5%;
-		   bottom 0;
-	
-	
-		
-	
-
-		     	 
-	
-
+	   left:10vw;
+        width: 80vw;
+        height: 90vh;
       }
       canvas {
-	      
-       width: 100%;
+        width: 100%;
         height: 100%;
-        position: absolute;
+        display: block;
       }
       /* try to handle mobile dialog */
       canvas + * {
@@ -87,23 +51,15 @@ overflow: hidden;
       }
 
       #loader {
-	     
-	      
-       position: absolute;
+        position: absolute;
         left: 0;
-       bottom:0;
+        top: 0;
         width: 100vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-       
-	             
-	      	
-
-
       }
 
       .spinner,
@@ -137,10 +93,7 @@ overflow: hidden;
   </head>
 
   <body>
-	  
-   <div id="gameContainer"></div> 
-      
- 
+    <div id="gameContainer"></div>
     <div id="loader">
       <img class="logo" src="logo.png">
       <div class="spinner"></div>
