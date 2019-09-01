@@ -153,15 +153,12 @@
  }
  }
 	  var justin = screen.height-screen.width;
-	 if(justin>0){let myElement = document.querySelector("#gameContainer");
-myElement.style.width = "90%";
-		      myElement.style.height = "100%";
+	 if(justin<0){let myElement = document.querySelector("#gameContainer");
+myElement.style.rotate="90deg";
+		   
 		 
 		     }
-	 else{let myElement = document.querySelector("#gameContainer");
-myElement.style.width = "30%";
-		      myElement.style.height = "100%";
-	      myElement.style.left = "35%";}
+
 	 
 	
  </script>
