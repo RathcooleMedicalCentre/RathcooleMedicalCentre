@@ -29,15 +29,20 @@
 	
 	
  }
-	 		      @media only screen and (orientation:landscape){
-  body {
-    height: 100vw;
+	 	 		      @media only screen and (orientation:portrait){
+
+  #gameContainer  {
+    position: absolute;
+	height:100vw;
+	width:90vh;
+	
     transform: rotate(90deg);
   }
 	
 	 }
 	
-	
+		 	 		      @media only screen and (orientation:landscape){
+
  #gameContainer {
 	
 	position: absolute;
@@ -52,6 +57,7 @@
 	
 	
  }
+	 }
  canvas {
 	
  width: 100%;
