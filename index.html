@@ -154,12 +154,15 @@
  }
 	 
 	 var justin = screen.height-screen.width;
-	 if(justin>0){gamecontainer.height =100%;
-	 gamecontainer.width = 90%;
+	 if(justin>0){let myElement = document.querySelector("#gameContainer");
+myElement.style.width = "90vw";
+		      myElement.style.height = "100vh";
+
 		 
 		     }
-	 else{gamecontainer.height =100%;
-	 gamecontainer.width = 30%;}
+	 else{let myElement = document.querySelector("#gameContainer");
+myElement.style.width = "30vw";
+		      myElement.style.height = "100vh";}
  </script>
 
 </html>
