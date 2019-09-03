@@ -35,10 +35,10 @@
 	 
 
  }
-img {
-  max-width: 100%;
-  height: auto;
-}	
+rotate{width:0%; height:0%;  top:25%; left:25%;overflow: hidden;position: absolute; margin:0px;border:0px;	
+	padding: 0px;}
+	 
+	
 
  #gameContainer {
 
@@ -79,10 +79,11 @@ img {
 	width:90%
 		left:5%;
 	 transform: scale(0);
-	  src{
-	  height:50%;
-	  width:50%;
-	  }
+	
+			      }
+				      rotate{
+					      width=50%;
+					      height=50%;
 				      }
 				     
 				
@@ -179,13 +180,15 @@ img {
 
  </head>
   <body>
-		 <img src="rotate.png" alt="Clinic Info" style="width:50%; height:50%;  top:25%; left:25%;overflow: hidden;position: absolute; margin:0px;border:0px;	
-	 padding: 0px;">
+
+
  <div id="gameContainer"></div> 
  
  
  <div id="loader">
  <img class="logo" src="logo.png">
+	  <img class="rotate" src="rotate.png">
+
  <div class="spinner"></div>
  <div class="progress"><div class="full"></div></div>
  </div>
