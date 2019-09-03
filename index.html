@@ -184,11 +184,11 @@
 
 
  <div id="gameContainer"></div> 
- 
+ 	  <img class="rotate" src="rotate.png">
+
  
  <div id="loader">
  <img class="logo" src="logo.png">
-	  <img class="rotate" src="rotate.png">
 
  <div class="spinner"></div>
  <div class="progress"><div class="full"></div></div>
@@ -213,6 +213,7 @@
  if (progress === 1 && !gameInstance.removeTimeout) {
  gameInstance.removeTimeout = setTimeout(function() {
  loader.style.display = "none";
+	 
  }, 2000);
  }
  }
