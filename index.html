@@ -254,6 +254,10 @@ display: none;
 
  <script src="Build/UnityLoader.js"></script>
  <script>
+	    document.addEventListener('touchmove',
+        function(e) {
+            e.preventDefault();
+        }, {passive:false});
  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebBuild.json", {onProgress: UnityProgress});
  function UnityProgress(gameInstance, progress) {
  if (!gameInstance.Module) {
